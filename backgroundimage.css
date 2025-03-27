@@ -1,0 +1,34 @@
+body {
+    font-family: 'Open Sans', sans-serif;  /* Applique la police Open Sans et sans-serif comme secours */
+    background-image: url(images/back.jpeg);  /* Spécifie l'image de fond */
+    background-repeat: no-repeat;  /* Empêche l'image de se répéter */
+    background-size: cover;  /* L'image couvre tout l'arrière-plan, en s'ajustant sans déformation */
+    background-position: center;  /* Centrer l'image de fond */
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;  /* Permet aux éléments de passer à la ligne suivante si l'espace est insuffisant */
+    justify-content: space-between;  /* Espacement égal entre les éléments */
+    /*gap: 20px;  /* Espacement entre les sections et les images */
+}
+
+section {
+    flex: 0 1 25%;  /* Chaque section prendra 25% de la largeur du conteneur */
+    box-sizing: border-box;  /* Assurez-vous que la taille de chaque élément inclut les marges et les bordures */
+    padding: 10px;  /* Un peu d'espace autour du texte (si vous en voulez toujours) */
+    text-align: center;  /* Centrer le texte dans la section */
+}
+
+section p {
+    text-align: justify;
+}
+
+section img {
+    width: 100%;  /* L'image prend 100% de la largeur de son conteneur */
+    /*height: auto;  /* Garder la proportion de l'image */
+    border-radius: 20px;
+    height: 250px; 
+}
+
